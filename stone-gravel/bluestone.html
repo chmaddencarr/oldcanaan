@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bluestone — Old Canaan Building Materials</title>
+  <meta name="description" content="Natural cleft or thermal. The decision that defines a traditional New England terrace or walkway. Precisely identified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper:#F2EDE4;--paper-mid:#EAE4D9;--ink:#1A1814;--mid:#6B6458;--faint:#A89F94;--rule:#C8BFB0;--copper:#7A5C3C;--copper-lt:#B08A68;
+      --font-display:'Playfair Display',Georgia,serif;--font-body:'EB Garamond',Georgia,serif;
+      --max-w:1280px;--article-w:680px;--col-pad:clamp(1.5rem,5vw,5rem);--ease:cubic-bezier(0.25,0,0.1,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:18px;}
+    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+    a{color:inherit;text-decoration:none;}
+    .masthead{border-bottom:1px solid var(--rule);padding:2rem var(--col-pad);}
+    .masthead-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.6rem;}
+    .masthead-meta{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:flex;gap:0.6rem;}
+    .masthead-lockup{text-align:center;width:100%;}
+    .masthead-rule-top,.masthead-rule-bottom{height:1px;background:var(--ink);width:100%;max-width:520px;margin:0.5rem auto;}
+    .masthead-title{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2.4rem);font-weight:500;letter-spacing:0.14em;text-transform:uppercase;line-height:1.2;color:var(--ink);}
+    .masthead-sub{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--mid);margin-top:0.2rem;font-style:italic;}
+    .masthead-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:0.2rem 2rem;margin-top:0.4rem;}
+    .masthead-nav a{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);padding:0.2rem 0;border-bottom:1px solid transparent;transition:color 0.2s,border-color 0.2s;}
+    .masthead-nav a:hover{color:var(--ink);border-bottom-color:var(--copper);}
+    .article-header{padding:4rem var(--col-pad) 0;max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;}
+    .article-breadcrumb{display:flex;align-items:center;gap:0.75rem;margin-bottom:2.5rem;}
+    .breadcrumb-home{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--faint);transition:color 0.2s;}
+    .breadcrumb-home:hover{color:var(--copper);}
+    .breadcrumb-sep{font-family:var(--font-body);color:var(--rule);font-size:0.8rem;}
+    .breadcrumb-current{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--copper);}
+    .article-specimen{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);padding:1rem 0;display:flex;align-items:baseline;justify-content:space-between;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap;}
+    .specimen-category{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--copper);}
+    .specimen-number{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;color:var(--faint);margin-left:auto;}
+    .article-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:500;line-height:1.15;letter-spacing:0.02em;color:var(--ink);margin-bottom:1rem;}
+    .article-subtitle{font-family:var(--font-body);font-size:1.1rem;color:var(--mid);font-style:italic;line-height:1.6;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule);}
+    .article-lead{width:100%;max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto 0;padding:0 var(--col-pad);}
+    .article-lead-wrap{width:100%;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,#3a342c 0%,#2a241e 60%,#1e1a15 100%);}
+    .article-lead-wrap img{width:100%;height:100%;object-fit:cover;}
+    .article-lead-caption{font-family:var(--font-body);font-size:0.78rem;color:var(--faint);font-style:italic;margin-top:0.6rem;padding-bottom:2.5rem;}
+    .article-body{max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;padding:0 var(--col-pad) 6rem;}
+    .article-body p{font-family:var(--font-body);font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.82;color:var(--ink);margin-bottom:1.4rem;}
+    .article-body p.opening{font-size:clamp(1.1rem,1.8vw,1.25rem);line-height:1.78;}
+    .article-section{margin-top:3rem;margin-bottom:0.5rem;}
+    .article-section-rule{width:100%;height:1px;background:var(--rule);margin-bottom:1.5rem;}
+    .article-section-label{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:1rem;}
+    .standard-callout{background:var(--ink);padding:2.5rem 2.5rem 2.5rem 2rem;margin-top:3.5rem;border-left:3px solid var(--copper);}
+    .standard-callout-label{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper-lt);display:block;margin-bottom:1rem;}
+    .standard-callout p{font-family:var(--font-body);font-size:1rem;line-height:1.78;color:rgba(242,237,228,0.85);font-style:italic;margin-bottom:0;}
+    .article-footer-nav{max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;padding:2rem var(--col-pad) 5rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);gap:2rem;flex-wrap:wrap;}
+    .article-footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}
+    .article-footer-nav a:hover{color:var(--copper);}
+    .next{margin-left:auto;text-align:right;}
+    .next-label{display:block;color:var(--faint);margin-bottom:0.25rem;font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;}
+    .next-title{font-family:var(--font-body);font-size:0.95rem;color:var(--ink);font-style:italic;letter-spacing:0;text-transform:none;}
+    .footer{padding:2.5rem var(--col-pad);border-top:1px solid var(--rule);}
+    .footer-inner{max-width:var(--max-w);margin:0 auto;}
+    .footer-content{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
+    .footer-name{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);}
+    .footer-location{font-family:var(--font-body);font-size:0.85rem;color:var(--faint);font-style:italic;}
+    .footer-nav{margin-left:auto;display:flex;gap:2rem;}
+    .footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}
+    .footer-nav a:hover{color:var(--ink);}
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-meta"><span>Connecticut</span><span style="color:var(--rule)">·</span><span>Est. in Practice</span></div>
+      <div class="masthead-lockup">
+        <div class="masthead-rule-top"></div>
+        <h1 class="masthead-title"><a href="/">Old Canaan Building Materials</a></h1>
+        <div class="masthead-rule-bottom"></div>
+        <p class="masthead-sub">The materials of traditional New England</p>
+      </div>
+      <nav class="masthead-nav">
+        <a href="/">The Archive</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <nav class="article-breadcrumb">
+      <a href="/" class="breadcrumb-home">The Archive</a>
+      <span class="breadcrumb-sep">·</span>
+      <span class="breadcrumb-current">Stone &amp; Gravel</span>
+    </nav>
+    <div class="article-specimen">
+      <span class="specimen-category">Stone &amp; Gravel</span>
+      <span class="specimen-number">Entry 002</span>
+    </div>
+    <h2 class="article-title">Bluestone</h2>
+    <p class="article-subtitle">Natural cleft or thermal. The decision that defines a traditional New England terrace or walkway.</p>
+  </div>
+
+  <div class="article-lead">
+    <div class="article-lead-wrap">
+      <img src="/images/yard03.jpg" alt="Bluestone steps with climbing roses, Connecticut" />
+    </div>
+    <p class="article-lead-caption">Bluestone steps, natural cleft — Connecticut.</p>
+  </div>
+
+  <article class="article-body">
+    <p class="opening">There is a terrace behind an old Connecticut house, you have seen it or one like it, where the stone has gone dark from the morning rain and the chairs are still wet and the garden is doing what New England gardens do in October, which is to say it is becoming more beautiful as it dies back. The stone underfoot is bluestone. It always is.</p>
+
+    <p>It is the defining horizontal surface of traditional New England landscape. The terrace, the front walk, the threshold at the door. In its right application it reads as permanent, as if the stone arrived before the house and the house was built around it. In its wrong application it looks like a product. The difference is almost always in the finish.</p>
+
+    <div class="article-section"><div class="article-section-rule"></div><span class="article-section-label">The Character</span></div>
+
+    <p>Bluestone has a quality that is difficult to name but immediately felt. It is hard without being cold. It holds heat from afternoon sun and releases it slowly into the evening. Wet, it deepens to a blue-grey so saturated it reads almost like water. Dry, it fades to a softer tone, silver at the edges where foot traffic has worn it, darker in the center where it sits undisturbed.</p>
+
+    <p>It is a stone that improves with age and use. The corners soften. The surface takes on a patina that no new stone has. An old bluestone terrace, properly laid, is one of the most satisfying surfaces underfoot that traditional New England architecture produces.</p>
+
+    <div class="article-section"><div class="article-section-rule"></div><span class="article-section-label">What It Is</span></div>
+
+    <p>Bluestone is a dense, fine-grained sandstone quarried primarily in New York and Pennsylvania, from geological deposits running along a band from the Hudson Valley into the Pocono plateau. Its color ranges from a uniform blue-grey to a full range that includes shades of brown, buff, lilac, and gold, depending on the clay and mineral content of the specific deposit.</p>
+
+    <p>It comes in two finishes. This is the decision that matters.</p>
+
+    <p>Natural cleft is split along the stone's natural sedimentary layers during quarrying. The surface is textured and slightly uneven, with the subtle ridges and variations of a material that has been separated rather than cut. Thickness varies across each piece. It is the older finish, the one found on historic New England properties, and it reads as completely of the earth.</p>
+
+    <p>Thermal is sawn to a consistent thickness and then flame-treated. A blowtorch passes over the surface until the outermost layer flakes away, leaving a slightly roughened texture that provides traction. The result is uniform, precise, and clean. It reads as considered rather than found.</p>
+
+    <div class="article-section"><div class="article-section-rule"></div><span class="article-section-label">How It Behaves</span></div>
+
+    <p>Both finishes are durable. Both handle the freeze-thaw cycles of a New England winter without cracking when properly installed. Both provide adequate traction when wet.</p>
+
+    <p>Natural cleft, with its varying thickness, requires more care in installation. The base must be precisely graded to bring an uneven stone to a level surface. Sand-set natural cleft is the traditional method and remains appropriate for terraces at grade, though it will shift slightly over decades and need occasional releveling. This is not a flaw. It is evidence of age.</p>
+
+    <p>Thermal, with its consistent thickness, is easier to install and holds its level more reliably over time. It is the more practical choice for tight-jointed ashlar patterns or large formal terraces where precision is the point.</p>
+
+    <p>Both finishes darken when wet and return to their dry tone as they dry. Full color bluestone shows this shift more dramatically than select blue. On an overcast day full color bluestone is extraordinary. On a bright dry day it can read as busy. Select blue holds its composure in all conditions.</p>
+
+    <div class="article-section"><div class="article-section-rule"></div><span class="article-section-label">Why It's Right</span></div>
+
+    <p>Concrete pavers mimic the shape of bluestone but have none of its thermal mass or visual depth. Manufactured stone lacks the variation that makes a natural material alive. Imported limestone, increasingly common as a bluestone substitute, is too pale, too even, and weathers differently in a wet New England climate.</p>
+
+    <p>The right stone recedes. It becomes the ground on which the garden and the architecture perform. Bluestone, in the right finish and the right pattern, does this better than any other material available in this region.</p>
+
+    <p>On finish: natural cleft for traditional, informal, and historic applications. Thermal for formal, precise, and contemporary-traditional work. The mistake is using thermal where natural cleft belongs. It reads as too resolved, too finished, for a farmhouse terrace or an irregular garden path. Using natural cleft where thermal belongs makes a formal space feel unintentionally rustic.</p>
+
+    <p>On pattern: irregular flagstone for informal paths and cottage gardens. Ashlar, dimensional stone in consistent rectangular sizes, for terraces, formal walks, and any application where the geometry of the architecture calls for a corresponding geometry in the ground plane.</p>
+
+    <div class="article-section"><div class="article-section-rule"></div><span class="article-section-label">How To Get It</span></div>
+
+    <p>Specify bluestone by finish and by color. Natural cleft or thermal. Select blue or full range. These are not interchangeable. A supplier who does not ask which you want is a supplier who will make the decision for you, and the decision will be wrong half the time.</p>
+
+    <p>Ask to see samples wet. The dry sample in a showroom tells you very little about how the stone will read in a New England garden through ten months of rain and frost. Wet the sample. Look at it in natural light, on an overcast day if possible.</p>
+
+    <p>For installation: sand-set for informal and historic applications at grade. Mortar-set for formal terraces, elevated applications, and anywhere movement cannot be tolerated. Joint width should be tight, 3/8" to 1/2" for ashlar, slightly wider for irregular. Wide joints filled with polymeric sand read as contemporary and do not belong on a traditional property.</p>
+
+    <div class="standard-callout">
+      <span class="standard-callout-label">The Old Canaan Standard</span>
+      <p>Natural cleft bluestone, full range or select blue, for traditional terraces, garden paths, and historic applications. Irregular or ashlar pattern depending on the formality of the setting. Sand-set at grade with tight joints. Thermal bluestone for formal, precise applications where consistent thickness and clean geometry are required. Specify the finish, specify the color range, and look at it wet before committing. There is no approximate substitute for the real thing, properly chosen.</p>
+    </div>
+  </article>
+
+  <div class="article-footer-nav">
+    <a href="/">← The Archive</a>
+    <div class="next">
+      <span class="next-label">Next Entry</span>
+      <a href="/stone-gravel/fieldstone.html" class="next-title">Fieldstone →</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <span class="footer-name">Old Canaan Building Materials</span>
+        <span class="footer-location">Connecticut</span>
+        <nav class="footer-nav"><a href="/about/">About</a></nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

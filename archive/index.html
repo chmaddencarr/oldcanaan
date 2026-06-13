@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Archive — Old Canaan Building Materials</title>
+  <meta name="description" content="The complete reference for the materials of traditional New England architecture, landscape, and design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper:#F2EDE4;--paper-mid:#EAE4D9;--ink:#1A1814;--mid:#6B6458;--faint:#A89F94;--rule:#C8BFB0;--copper:#7A5C3C;--copper-lt:#B08A68;
+      --font-display:'Playfair Display',Georgia,serif;--font-body:'EB Garamond',Georgia,serif;
+      --max-w:1280px;--col-pad:clamp(1.5rem,5vw,5rem);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{font-size:18px;}
+    body{background:var(--paper);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+    a{color:inherit;text-decoration:none;}
+
+    .masthead{border-bottom:1px solid var(--rule);padding:2rem var(--col-pad);}
+    .masthead-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.6rem;}
+    .masthead-meta{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:flex;gap:0.6rem;}
+    .masthead-lockup{text-align:center;width:100%;}
+    .masthead-rule-top,.masthead-rule-bottom{height:1px;background:var(--ink);width:100%;max-width:520px;margin:0.5rem auto;}
+    .masthead-title{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2.4rem);font-weight:500;letter-spacing:0.14em;text-transform:uppercase;line-height:1.2;color:var(--ink);}
+    .masthead-sub{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--mid);margin-top:0.2rem;font-style:italic;}
+    .masthead-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:0.2rem 2rem;margin-top:0.4rem;}
+    .masthead-nav a{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);padding:0.2rem 0;border-bottom:1px solid transparent;transition:color 0.2s,border-color 0.2s;}
+    .masthead-nav a:hover{color:var(--ink);border-bottom-color:var(--copper);}
+    .masthead-nav a.active{color:var(--ink);border-bottom-color:var(--copper);}
+
+    .archive-header{padding:4rem var(--col-pad) 3rem;max-width:var(--max-w);margin:0 auto;}
+    .archive-header-rule{width:100%;height:1px;background:var(--ink);margin-bottom:2rem;}
+    .archive-header-label{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:1rem;}
+    .archive-header-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:500;line-height:1.15;letter-spacing:0.02em;color:var(--ink);}
+
+    .archive-body{max-width:var(--max-w);margin:0 auto;padding:0 var(--col-pad) 6rem;}
+
+    .archive-category{margin-bottom:3rem;}
+    .archive-category-header{display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem;}
+    .archive-category-rule{flex:1;height:1px;background:var(--rule);}
+    .archive-category-label{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper);white-space:nowrap;}
+    .archive-category-count{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.18em;color:var(--faint);}
+
+    .archive-entry{display:grid;grid-template-columns:3rem 1fr 1.5rem;align-items:center;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid var(--rule);transition:background 0.2s,padding 0.2s,margin 0.2s;cursor:pointer;}
+    .archive-entry:first-of-type{border-top:1px solid var(--rule);}
+    .archive-entry:hover{background:var(--paper-mid);padding:1.1rem 1rem;margin:0 -1rem;}
+    .entry-num{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.18em;color:var(--faint);}
+    .entry-title{font-family:var(--font-body);font-size:1.05rem;color:var(--ink);font-style:italic;line-height:1.4;}
+    .entry-arrow{font-family:var(--font-body);color:var(--faint);font-size:1rem;text-align:right;transition:color 0.2s,transform 0.2s;}
+    .archive-entry:hover .entry-arrow{color:var(--copper);transform:translateX(3px);}
+
+    .footer{padding:2.5rem var(--col-pad);border-top:1px solid var(--rule);}
+    .footer-inner{max-width:var(--max-w);margin:0 auto;}
+    .footer-content{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}
+    .footer-name{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);}
+    .footer-location{font-family:var(--font-body);font-size:0.85rem;color:var(--faint);font-style:italic;}
+    .footer-nav{margin-left:auto;display:flex;gap:2rem;}
+    .footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}
+    .footer-nav a:hover{color:var(--ink);}
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-meta"><span>Connecticut</span><span style="color:var(--rule)">·</span><span>Est. in Practice</span></div>
+      <div class="masthead-lockup">
+        <div class="masthead-rule-top"></div>
+        <h1 class="masthead-title"><a href="/">Old Canaan Building Materials</a></h1>
+        <div class="masthead-rule-bottom"></div>
+        <p class="masthead-sub">The materials of traditional New England</p>
+      </div>
+      <nav class="masthead-nav">
+        <a href="/archive/" class="active">The Archive</a>
+        <a href="/standard/">The Standard</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="archive-header">
+    <div class="archive-header-rule"></div>
+    <span class="archive-header-label">The Archive</span>
+    <h2 class="archive-header-title">The complete reference for the materials<br>of traditional New England.</h2>
+  </div>
+
+  <div class="archive-body">
+
+    <div class="archive-category">
+      <div class="archive-category-header">
+        <span class="archive-category-label">Stone &amp; Gravel</span>
+        <div class="archive-category-rule"></div>
+        <span class="archive-category-count">3 entries</span>
+      </div>
+      <a href="/stone-gravel/pea-gravel.html" class="archive-entry">
+        <span class="entry-num">001</span>
+        <span class="entry-title">Native River-Washed Pea Gravel</span>
+        <span class="entry-arrow">→</span>
+      </a>
+      <a href="/stone-gravel/bluestone.html" class="archive-entry">
+        <span class="entry-num">002</span>
+        <span class="entry-title">Bluestone — Natural Cleft and Thermal</span>
+        <span class="entry-arrow">→</span>
+      </a>
+      <a href="/stone-gravel/fieldstone.html" class="archive-entry">
+        <span class="entry-num">003</span>
+        <span class="entry-title">Fieldstone</span>
+        <span class="entry-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="archive-category">
+      <div class="archive-category-header">
+        <span class="archive-category-label">Wood Exteriors</span>
+        <div class="archive-category-rule"></div>
+        <span class="archive-category-count">1 entry</span>
+      </div>
+      <a href="/wood-exteriors/eastern-white-cedar.html" class="archive-entry">
+        <span class="entry-num">001</span>
+        <span class="entry-title">Eastern White Cedar Shingles</span>
+        <span class="entry-arrow">→</span>
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <span class="footer-name">Old Canaan Building Materials</span>
+        <span class="footer-location">Connecticut</span>
+        <nav class="footer-nav">
+          <a href="/about/">About</a>
+          <a href="mailto:hello@oldcanaan.com">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
