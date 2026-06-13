@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Old Canaan Building Materials</title>
+  <meta name="description" content="Old Canaan Building Materials is the definitive guide to the materials of traditional New England. Written by a working architect based in Connecticut." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper:     #F2EDE4;
+      --paper-mid: #EAE4D9;
+      --ink:       #1A1814;
+      --mid:       #6B6458;
+      --faint:     #A89F94;
+      --rule:      #C8BFB0;
+      --copper:    #7A5C3C;
+      --copper-lt: #B08A68;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'EB Garamond', Georgia, serif;
+      --max-w:    1280px;
+      --article-w: 680px;
+      --col-pad:  clamp(1.5rem, 5vw, 5rem);
+      --ease:     cubic-bezier(0.25, 0, 0.1, 1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 18px; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .masthead { border-bottom: 1px solid var(--rule); padding: 2rem var(--col-pad); }
+    .masthead-inner { max-width: var(--max-w); margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
+    .masthead-meta { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); display: flex; gap: 0.6rem; }
+    .masthead-lockup { text-align: center; width: 100%; }
+    .masthead-rule-top, .masthead-rule-bottom { height: 1px; background: var(--ink); width: 100%; max-width: 520px; margin: 0.5rem auto; }
+    .masthead-title { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 2.4rem); font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.2; color: var(--ink); }
+    .masthead-sub { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--mid); margin-top: 0.2rem; font-style: italic; }
+    .masthead-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.2rem 2rem; margin-top: 0.4rem; }
+    .masthead-nav a { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mid); padding: 0.2rem 0; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .masthead-nav a:hover { color: var(--ink); border-bottom-color: var(--copper); }
+    .masthead-nav a.active { color: var(--ink); border-bottom-color: var(--copper); }
+
+    .page-header {
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto;
+      padding: 4rem var(--col-pad) 3rem;
+    }
+    .page-rule { width: 100%; height: 1px; background: var(--ink); margin-bottom: 2rem; }
+    .page-label { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--faint); display: block; margin-bottom: 1rem; }
+    .page-title { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 500; line-height: 1.15; letter-spacing: 0.02em; color: var(--ink); }
+
+    .page-body {
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto;
+      padding: 0 var(--col-pad) 6rem;
+    }
+    .page-body p {
+      font-family: var(--font-body);
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      line-height: 1.82;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .page-body p.opening {
+      font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+      font-style: italic;
+    }
+    .section-break {
+      width: 2.5rem;
+      height: 2px;
+      background: var(--copper);
+      margin: 2.5rem 0;
+    }
+
+    .footer { padding: 2.5rem var(--col-pad); border-top: 1px solid var(--rule); }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; }
+    .footer-content { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+    .footer-name { font-family: var(--font-display); font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); }
+    .footer-location { font-family: var(--font-body); font-size: 0.85rem; color: var(--faint); font-style: italic; }
+    .footer-nav { margin-left: auto; display: flex; gap: 2rem; }
+    .footer-nav a { font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mid); transition: color 0.2s; }
+    .footer-nav a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-meta">
+        <span>Connecticut</span>
+        <span style="color:var(--rule)">·</span>
+        <span>Est. in Practice</span>
+      </div>
+      <div class="masthead-lockup">
+        <div class="masthead-rule-top"></div>
+        <h1 class="masthead-title"><a href="/">Old Canaan Building Materials</a></h1>
+        <div class="masthead-rule-bottom"></div>
+        <p class="masthead-sub">The materials of traditional New England</p>
+      </div>
+      <nav class="masthead-nav">
+        <a href="/archive">The Archive</a>
+        <a href="/standard">The Standard</a>
+        <a href="/about" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="page-rule"></div>
+    <span class="page-label">About</span>
+    <h2 class="page-title">Old Canaan Building Materials</h2>
+  </div>
+
+  <div class="page-body">
+    <p class="opening">Old Canaan is the definitive guide to the materials of traditional New England architecture, landscape, and design. What they are, what they look like, and how to get them right.</p>
+
+    <p>The knowledge that makes a traditional New England property feel exactly right has always existed. It lives in the heads of old builders, in the sample rooms of good suppliers, in the specifications of architects who have been doing this work for decades. It has never been in one place, findable, until now.</p>
+
+    <p>Old Canaan identifies materials with precision. Grade, origin, finish, behavior over time. We show them dry and wet, raw and aged, installed in real buildings and landscapes. We give you enough to walk into a supplier and ask for the right thing with confidence.</p>
+
+    <div class="section-break"></div>
+
+    <p>Old Canaan is written by a working architect and designer based in Connecticut, with years of experience specifying traditional materials on real New England projects. The authority here comes from practice, not research. These are the materials we specify. This is what we know.</p>
+
+    <p>We do not sell products. We identify them. We never recommend something we would not specify ourselves. We never guess. If we do not know something precisely, we say so and we find out.</p>
+
+    <div class="section-break"></div>
+
+    <p>For project consultation or material selection support, reach out directly.</p>
+
+    <p><a href="mailto:hello@oldcanaan.com" style="color:var(--copper); border-bottom: 1px solid var(--copper); padding-bottom:2px;">hello@oldcanaan.com</a></p>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <span class="footer-name">Old Canaan Building Materials</span>
+        <span class="footer-location">Connecticut</span>
+        <nav class="footer-nav">
+          <a href="/about">About</a>
+          <a href="mailto:hello@oldcanaan.com">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

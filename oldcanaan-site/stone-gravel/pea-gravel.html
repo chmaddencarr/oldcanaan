@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Native River-Washed Pea Gravel — Old Canaan Building Materials</title>
+  <meta name="description" content="River-washed pea gravel, 3/8 inch grade. The gravel for a traditional New England driveway or terrace. Precisely identified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper:      #F2EDE4;
+      --paper-mid:  #EAE4D9;
+      --paper-dark: #E0D9CC;
+      --ink:        #1A1814;
+      --mid:        #6B6458;
+      --faint:      #A89F94;
+      --rule:       #C8BFB0;
+      --copper:     #7A5C3C;
+      --copper-lt:  #B08A68;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'EB Garamond', Georgia, serif;
+      --max-w:      1280px;
+      --article-w:  680px;
+      --col-pad:    clamp(1.5rem, 5vw, 5rem);
+      --ease:       cubic-bezier(0.25, 0, 0.1, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 18px; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 1px solid var(--rule);
+      padding: 2rem var(--col-pad);
+    }
+    .masthead-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .masthead-meta {
+      font-family: var(--font-display);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--faint);
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+    }
+    .masthead-lockup { text-align: center; width: 100%; }
+    .masthead-rule-top,
+    .masthead-rule-bottom {
+      height: 1px;
+      background: var(--ink);
+      width: 100%;
+      max-width: 520px;
+      margin: 0.5rem auto;
+    }
+    .masthead-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2.4rem);
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+    .masthead-sub {
+      font-family: var(--font-display);
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: 0.2rem;
+      font-style: italic;
+    }
+    .masthead-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.2rem 2rem;
+      margin-top: 0.4rem;
+    }
+    .masthead-nav a {
+      font-family: var(--font-display);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding: 0.2rem 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .masthead-nav a:hover { color: var(--ink); border-bottom-color: var(--copper); }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      padding: 4rem var(--col-pad) 0;
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto;
+    }
+    .article-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .breadcrumb-home {
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--faint);
+      transition: color 0.2s;
+    }
+    .breadcrumb-home:hover { color: var(--copper); }
+    .breadcrumb-sep {
+      font-family: var(--font-body);
+      color: var(--rule);
+      font-size: 0.8rem;
+    }
+    .breadcrumb-current {
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--copper);
+    }
+    .article-specimen {
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .specimen-category {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--copper);
+    }
+    .specimen-number {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      color: var(--faint);
+      margin-left: auto;
+    }
+    .article-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .article-subtitle {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      color: var(--mid);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── ARTICLE LEAD IMAGE ── */
+    .article-lead {
+      width: 100%;
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto 0;
+      padding: 0 var(--col-pad);
+    }
+    .article-lead-wrap {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: linear-gradient(135deg, #3a342c 0%, #2a241e 60%, #1e1a15 100%);
+      position: relative;
+    }
+    .article-lead-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(139,110,74,0.05) 0px,
+        rgba(139,110,74,0.05) 1px,
+        transparent 1px,
+        transparent 20px
+      );
+    }
+    .article-lead-caption {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      color: var(--faint);
+      font-style: italic;
+      margin-top: 0.6rem;
+      padding-bottom: 2.5rem;
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto;
+      padding: 0 var(--col-pad) 6rem;
+    }
+    .article-body p {
+      font-family: var(--font-body);
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      line-height: 1.82;
+      color: var(--ink);
+      margin-bottom: 1.4rem;
+    }
+    .article-body p.opening {
+      font-size: clamp(1.1rem, 1.8vw, 1.25rem);
+      line-height: 1.78;
+      color: var(--ink);
+    }
+    .article-section {
+      margin-top: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .article-section-rule {
+      width: 100%;
+      height: 1px;
+      background: var(--rule);
+      margin-bottom: 1.5rem;
+    }
+    .article-section-label {
+      font-family: var(--font-display);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--faint);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    /* ── THE STANDARD CALLOUT ── */
+    .standard-callout {
+      background: var(--ink);
+      padding: 2.5rem 2.5rem 2.5rem 2rem;
+      margin-top: 3.5rem;
+      border-left: 3px solid var(--copper);
+    }
+    .standard-callout-label {
+      font-family: var(--font-display);
+      font-size: 0.58rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--copper-lt);
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .standard-callout p {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.78;
+      color: rgba(242,237,228,0.85);
+      font-style: italic;
+      margin-bottom: 0;
+    }
+
+    /* ── ARTICLE FOOTER NAV ── */
+    .article-footer-nav {
+      max-width: calc(var(--article-w) + (var(--col-pad) * 2));
+      margin: 0 auto;
+      padding: 0 var(--col-pad) 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--rule);
+      padding-top: 2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .article-footer-nav a {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+    .article-footer-nav a:hover { color: var(--copper); }
+    .article-footer-nav .next {
+      margin-left: auto;
+      text-align: right;
+    }
+    .article-footer-nav .next-label {
+      display: block;
+      color: var(--faint);
+      margin-bottom: 0.25rem;
+    }
+    .article-footer-nav .next-title {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--ink);
+      font-style: italic;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── FOOTER ── */
+    .footer { padding: 2.5rem var(--col-pad); border-top: 1px solid var(--rule); }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; }
+    .footer-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .footer-name {
+      font-family: var(--font-display);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .footer-location {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--faint);
+      font-style: italic;
+    }
+    .footer-nav { margin-left: auto; display: flex; gap: 2rem; }
+    .footer-nav a {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--ink); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .article-specimen { flex-direction: column; gap: 0.5rem; }
+      .specimen-number { margin-left: 0; }
+      .standard-callout { padding: 2rem 1.5rem; }
+      .article-footer-nav { flex-direction: column; align-items: flex-start; }
+      .article-footer-nav .next { margin-left: 0; text-align: left; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .masthead-lockup { animation: fadeUp 0.65s cubic-bezier(0.25,0,0.1,1) both; }
+    .article-header  { animation: fadeUp 0.65s 0.1s cubic-bezier(0.25,0,0.1,1) both; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="masthead-meta">
+        <span>Connecticut</span>
+        <span style="color:var(--rule)">·</span>
+        <span>Est. in Practice</span>
+      </div>
+      <div class="masthead-lockup">
+        <div class="masthead-rule-top"></div>
+        <h1 class="masthead-title"><a href="#">Old Canaan Building Materials</a></h1>
+        <div class="masthead-rule-bottom"></div>
+        <p class="masthead-sub">The materials of traditional New England</p>
+      </div>
+      <nav class="masthead-nav">
+        <a href="#">The Archive</a>
+        <a href="#">The Standard</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ARTICLE HEADER -->
+  <div class="article-header">
+    <nav class="article-breadcrumb">
+      <a href="#" class="breadcrumb-home">The Archive</a>
+      <span class="breadcrumb-sep">·</span>
+      <span class="breadcrumb-current">Stone &amp; Gravel</span>
+    </nav>
+    <div class="article-specimen">
+      <span class="specimen-category">Stone &amp; Gravel</span>
+      <span class="specimen-number">Entry 001</span>
+    </div>
+    <h2 class="article-title">Native River-Washed Pea Gravel</h2>
+    <p class="article-subtitle">The gravel for a traditional New England driveway or terrace. What it is, how it behaves, and how to get it right.</p>
+  </div>
+
+  <!-- LEAD IMAGE -->
+  <div class="article-lead">
+    <div class="article-lead-wrap"></div>
+    <p class="article-lead-caption">River-washed pea gravel, 3/8" grade — dry. Connecticut, autumn.</p>
+  </div>
+
+  <!-- ARTICLE BODY -->
+  <article class="article-body">
+
+    <p class="opening">The sound is the first thing. Loose underfoot, a soft compression with each step, not the crunch of crushed stone, not the hard click of Belgian block. Something quieter. The kind of surface that slows you down slightly, which is exactly what a driveway approaching an old New England farmhouse should do.</p>
+
+    <p>This is the gravel. Not pea gravel generally. This specific thing, native river-washed stone, 3/8" grade, in a mix of warm grey, buff, and pale rose, worn smooth over centuries by moving water, pulled from deposits in the Connecticut River valley and its tributaries. It has been on the driveways and terraces of this region for as long as people have been building here. It belongs.</p>
+
+    <div class="article-section">
+      <div class="article-section-rule"></div>
+      <span class="article-section-label">The Character</span>
+    </div>
+
+    <p>There is a warmth to it that photographs never quite capture. In dry conditions it sits pale and quiet, a surface that recedes and lets the house and the landscape speak. In rain it deepens. The grey goes charcoal, the buff goes gold, the pale rose reads almost amber. A wet gravel driveway on a November afternoon, edged in Belgian block, bordered by low plantings going brown for winter, is one of the most quietly beautiful things New England produces.</p>
+
+    <p>It moves slightly underfoot, which some people mistake for a flaw. It is not. That give is what separates it from the hard geometry of a paved surface. It is a material that knows it is outside.</p>
+
+    <div class="article-section">
+      <div class="article-section-rule"></div>
+      <span class="article-section-label">What It Is</span>
+    </div>
+
+    <p>River-washed pea gravel, 3/8" grade. The size matters. Smaller grades compact too tightly and lose their drainage. Larger grades feel unstable underfoot and read as decorative rather than purposeful. 3/8" is the working size, the one that has proven itself over generations of New England winters.</p>
+
+    <p>The origin matters too. This is not manufactured stone. It is not crushed granite dressed to look rounded. It is sedimentary, pulled from riverbeds and glacial deposits, smoothed by water, sorted by size. The color comes from the geology of the region: granite, feldspar, quartzite, occasional veins of rose quartz. The mix is never uniform and should not be. Uniformity is the tell of the wrong material.</p>
+
+    <div class="article-section">
+      <div class="article-section-rule"></div>
+      <span class="article-section-label">How It Behaves</span>
+    </div>
+
+    <p>Dry, it is pale. Almost silver in strong afternoon light. It reflects heat in summer and sheds it quickly. A gravel terrace cools faster than stone at the end of a hot day.</p>
+
+    <p>Wet, it transforms. Each stone shows its true color, the way a piece of sea glass looks dull until the wave comes. The warm tones come forward. The surface takes on a depth it does not have in dry conditions.</p>
+
+    <p>Over time it settles. The first season a gravel driveway may feel slightly loose, slightly provisional. By the second or third year it has found its level, compacted where it needs to compact, and begun to feel as if it has always been there. This is the correct outcome.</p>
+
+    <p>It drains perfectly. In a New England climate, fifty inches of rain annually, freeze-thaw cycles through four months of winter, drainage is not a preference. It is a requirement. River-washed pea gravel does not hold water. It passes it through.</p>
+
+    <div class="article-section">
+      <div class="article-section-rule"></div>
+      <span class="article-section-label">Why It's Right</span>
+    </div>
+
+    <p>The wrong gravel announces itself. Crushed stone is angular, grey, and industrial. It belongs in a construction site base layer, not on the surface of a traditional driveway. Decomposed granite reads as Californian. Colored decorative gravels read as a garden center. None of them have the quiet authority of river-washed stone in warm grey and buff.</p>
+
+    <p>The right gravel disappears. It becomes part of the property the way an old stone wall does, present, functional, belonging so completely that you stop seeing it as a choice and start seeing it as a fact of the place.</p>
+
+    <div class="article-section">
+      <div class="article-section-rule"></div>
+      <span class="article-section-label">How To Get It</span>
+    </div>
+
+    <p>Ask for river-washed pea gravel, 3/8" grade. Specify native New England stone, not imported, not manufactured. Ask to see a sample wet and dry before committing. The color range should include warm grey, buff, and pale rose. If it reads uniformly grey or uniformly white, it is the wrong stone.</p>
+
+    <p>Install a compacted base layer of crusher run beneath it, four inches minimum, before the finish gravel goes down. The finish layer should be two to three inches deep. Edging is not optional. Belgian block, steel, or granite cobble holds the perimeter. Without it the gravel migrates and the driveway loses its definition within a season.</p>
+
+    <!-- THE STANDARD CALLOUT -->
+    <div class="standard-callout">
+      <span class="standard-callout-label">The Old Canaan Standard</span>
+      <p>River-washed pea gravel, 3/8" grade. Native New England origin. Color range: warm grey, buff, pale rose. Installed over compacted crusher run base at 2 to 3 inches depth. Edged in Belgian block or granite cobble. This is the gravel for a traditional New England driveway or terrace. There is no approximate substitute.</p>
+    </div>
+
+  </article>
+
+  <!-- ARTICLE FOOTER NAV -->
+  <div class="article-footer-nav">
+    <a href="#">← The Archive</a>
+    <div class="next">
+      <span class="article-footer-nav next-label">Next Entry</span>
+      <a href="#" class="next-title">Bluestone — Natural Cleft and Thermal →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <span class="footer-name">Old Canaan Building Materials</span>
+        <span class="footer-location">Connecticut</span>
+        <nav class="footer-nav">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
