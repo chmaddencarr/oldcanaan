@@ -702,10 +702,29 @@
       <span class="subscribe-eyebrow">The Old Canaan Standard</span>
       <h2 class="subscribe-title">New entries, when they're ready.</h2>
       <p class="subscribe-body">No frequency. No filler. When we identify something worth knowing, we send it.</p>
-      <form class="subscribe-form" onsubmit="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfwPwQyJYpKcbErAZsPxMOcrAdyGaIFk4fXW6iB0iQoB30Lpg/viewform', '_blank'); return false;">
-        <input type="email" placeholder="your@email.com" class="subscribe-input" />
+      <form class="subscribe-form" id="subscribe-form" name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="subscribe" />
+        <input type="hidden" name="bot-field" />
+        <input type="email" name="email" placeholder="your@email.com" class="subscribe-input" required />
         <button type="submit" class="subscribe-btn">Subscribe</button>
       </form>
+      <div id="subscribe-thanks" style="display:none;font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;margin-top:1rem;">👍</div>
+      <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          var form = this;
+          var data = new FormData(form);
+          fetch('/', { method: 'POST', body: data })
+            .then(function() {
+              form.style.display = 'none';
+              document.getElementById('subscribe-thanks').style.display = 'block';
+            })
+            .catch(function() {
+              form.style.display = 'none';
+              document.getElementById('subscribe-thanks').style.display = 'block';
+            });
+        });
+      </script>
     </div>
   </section>
 
