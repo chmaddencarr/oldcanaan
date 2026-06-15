@@ -226,6 +226,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -268,6 +277,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between natural cleft and thermal bluestone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Natural cleft bluestone has a rough, irregular surface split along the natural planes of the stone. Thermal bluestone has been flame-treated to produce a smoother, more uniform surface. Natural cleft is the correct finish for traditional New England terraces and walkways. Thermal is more appropriate for contemporary or formal applications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What thickness should bluestone pavers be for a terrace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1.5 inches for a sand-set irregular pattern. 1.25 inches minimum for mortar-set applications. Thinner material is fragile and will crack under foot traffic and freeze-thaw cycling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is bluestone the same as slate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Bluestone is a dense sandstone quarried primarily in New York and Pennsylvania. Slate is a metamorphic rock quarried in Vermont, New York, and Pennsylvania. They are different materials with different colors, textures, and appropriate applications."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

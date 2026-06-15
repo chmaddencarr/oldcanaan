@@ -178,6 +178,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -220,6 +229,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is linseed oil paint and why was it used on historic houses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Linseed oil paint is made from boiled or raw linseed oil, pigment, and a drier. It penetrates wood fibers rather than forming a surface film. Every painted house in New England was originally painted with linseed oil paint \u2014 it was the standard exterior finish from the colonial period through the mid-nineteenth century when commercial oil-based paints replaced it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you paint latex over linseed oil paint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It works in many situations but fails characteristically in others. Latex forms an impermeable film over linseed oil surfaces. When moisture in the wood tries to escape, it blisters the latex from behind. On old houses with many layers of linseed oil paint history, full preparation and priming is required before any latex system will perform reliably."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best exterior paint for a historic New England house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For restoration of historic houses: linseed oil paint from Ottosson or Allback, applied in multiple coats to bare wood. For traditional new construction: linseed oil primer on all bare wood surfaces followed by two coats of high-quality exterior latex. The primer is not optional."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

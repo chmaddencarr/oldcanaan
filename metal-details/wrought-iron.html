@@ -23,9 +23,42 @@
     .suggest-modal-overlay{display:none;position:fixed;inset:0;background:rgba(26,24,20,0.7);z-index:200;align-items:center;justify-content:center;padding:2rem;}.suggest-modal-overlay.open{display:flex;}.suggest-modal{background:var(--paper);max-width:480px;width:100%;padding:2.5rem;position:relative;}.suggest-modal-label{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:1rem;}.suggest-modal h3{font-family:var(--font-display);font-size:1.3rem;font-weight:500;color:var(--ink);margin-bottom:0.5rem;letter-spacing:0.02em;}.suggest-modal p{font-family:var(--font-body);font-size:0.95rem;color:var(--mid);font-style:italic;margin-bottom:1.5rem;line-height:1.6;}.suggest-form{display:flex;flex-direction:column;gap:0.75rem;}.suggest-input{font-family:var(--font-body);font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--rule);padding:0.75rem 1rem;outline:none;transition:border-color 0.2s;width:100%;}.suggest-input:focus{border-color:var(--copper);}.suggest-textarea{font-family:var(--font-body);font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--rule);padding:0.75rem 1rem;outline:none;resize:vertical;min-height:80px;transition:border-color 0.2s;width:100%;}.suggest-textarea:focus{border-color:var(--copper);}.suggest-submit{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--paper);background:var(--ink);border:none;padding:0.85rem 1.5rem;cursor:pointer;transition:background 0.2s;align-self:flex-start;}.suggest-submit:hover{background:var(--copper);}.suggest-close{position:absolute;top:1rem;right:1rem;font-family:var(--font-body);font-size:1.2rem;color:var(--faint);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s;}.suggest-close:hover{color:var(--ink);}.suggest-thanks{display:none;text-align:center;padding:1rem 0;}.suggest-thanks span{font-size:2rem;}
     .article-footer-nav{max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;padding:2rem var(--col-pad) 5rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);gap:2rem;flex-wrap:wrap;}.article-footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}.article-footer-nav a:hover{color:var(--copper);}.next{margin-left:auto;text-align:right;}.next-label{display:block;color:var(--faint);margin-bottom:0.25rem;font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;}.next-title{font-family:var(--font-body);font-size:0.95rem;color:var(--ink);font-style:italic;letter-spacing:0;text-transform:none;}
     .footer{padding:2.5rem var(--col-pad);border-top:1px solid var(--rule);}.footer-inner{max-width:var(--max-w);margin:0 auto;}.footer-content{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}.footer-name{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);}.footer-location{font-family:var(--font-body);font-size:0.85rem;color:var(--faint);font-style:italic;}.footer-nav{margin-left:auto;display:flex;gap:2rem;}.footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}.footer-nav a:hover{color:var(--ink);}
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What metal is correct for railings on a traditional New England house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wrought iron or hand-forged mild steel. Aluminum railings read as aluminum regardless of finish. Composite railings read as composite. Wrought iron has been the correct material for residential railings in New England since the eighteenth century."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What color should exterior iron railings be painted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Black, almost universally, on traditional New England work. Occasionally dark green or dark red on garden gates and fencing. Oil-based paint over rust-inhibiting primer. Black reads as serious without reading as heavy."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

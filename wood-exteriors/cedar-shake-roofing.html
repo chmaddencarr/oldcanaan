@@ -178,6 +178,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -220,6 +229,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between cedar shakes and cedar shingles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cedar shakes are split on at least one face, giving them a rough texture that comes from following the grain of the wood. Cedar shingles are sawn on both faces and are smoother and more uniform. For roofing, hand-split and resawn shakes are the correct traditional specification. Sawn shingles are a different material."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What grade of cedar shake should be specified for roofing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Number One Blue Label, western red cedar, hand-split and resawn, 24-inch length. This is clear edge-grain wood with no sapwood on the exposed portion. Number One is not a luxury on a traditional property \u2014 it is the minimum correct specification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do cedar shake roofs require underlayment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes \u2014 18-inch strips of 30-pound felt interlay between courses. This felt interlay is what makes a shake roof weather-tight despite the inherent irregularity of the split wood. Shakes installed without interlay will leak."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

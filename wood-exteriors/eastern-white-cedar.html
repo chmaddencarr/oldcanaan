@@ -178,6 +178,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -220,6 +229,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does eastern white cedar take to turn grey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two to three years to begin silvering noticeably. Four to five years to reach the full silver-grey of fully weathered cedar in a typical New England climate. Coastal properties with salt air exposure will silver faster \u2014 sometimes within two seasons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What grade of cedar shingle should I specify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extra grade, re-butted and re-jointed, for wall shingle applications. This grade is clear, edge-grain material with consistent thickness that weathers evenly. Lower grades have more variation in density and resin content and weather unevenly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the correct exposure for cedar wall shingles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "5 inches for standard residential work with 16-inch shingles. This leaves approximately 11 inches of each shingle concealed under the course above, providing three layers of coverage at any point on the wall."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

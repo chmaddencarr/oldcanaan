@@ -178,6 +178,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -220,6 +229,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does copper take to turn green?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The patina timeline in New England: bright penny-colored when new, brown within the first winter, dark chocolate saddle leather by year three, first traces of green on coastal properties around year ten, full verdigris complete by year twenty. Inland properties with less salt air exposure take longer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What weight copper should be specified for gutters and flashing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "16-ounce copper for standard residential flashing, gutters, and downspouts. 20-ounce for flat roof applications and high-wear details. Anything lighter than 16-ounce is a compromise not worth making on a traditional property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What gutter profile is correct for a traditional New England house?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Half-round. The K-style gutter common in residential construction is a twentieth-century commercial profile that reads as out of place on a historic or traditional house. Half-round is the correct traditional profile."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">

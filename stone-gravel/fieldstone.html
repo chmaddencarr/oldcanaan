@@ -178,6 +178,15 @@
     .suggest-close:hover { color: var(--ink); }
     .suggest-thanks { display: none; text-align: center; padding: 1rem 0; }
     .suggest-thanks span { font-size: 2rem; }
+
+    /* FAQ */
+    .faq-section{max-width:calc(680px + (clamp(1.5rem,5vw,5rem) * 2));margin:3rem auto 0;padding:0 clamp(1.5rem,5vw,5rem);}
+    .faq-section-label{font-family:'Playfair Display',Georgia,serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:#A89F94;display:block;margin-bottom:1.5rem;}
+    .faq-rule{width:100%;height:1px;background:#C8BFB0;margin-bottom:1.5rem;}
+    .faq-item{margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #C8BFB0;}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{font-family:'Playfair Display',Georgia,serif;font-size:1rem;font-weight:500;color:#1A1814;margin-bottom:0.6rem;line-height:1.4;}
+    .faq-a{font-family:'EB Garamond',Georgia,serif;font-size:1rem;color:#6B6458;line-height:1.75;}
   </style>
   <!-- SEO -->
   <meta name="robots" content="index, follow" />
@@ -220,6 +229,38 @@
   </script>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is fieldstone and where does it come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fieldstone is glacially deposited stone found on the surface of New England fields and forests. It is not quarried \u2014 it is gathered. The stone was cleared from farmland over centuries and used to build the dry-laid walls that define the New England landscape."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are traditional New England stone walls built?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dry-laid, without mortar. Large flat stones form the base courses, with smaller stones filling the interior. A properly built dry-laid wall accommodates frost heave by allowing movement. Mortared fieldstone walls crack under the same frost pressure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can fieldstone be used for a foundation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Historic fieldstone foundations exist throughout New England and many remain sound after two hundred years. New fieldstone foundations require a concrete footing below the frost line. The stone is laid in lime mortar, not Portland cement."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="masthead">
