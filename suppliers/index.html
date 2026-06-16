@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suppliers — Old Canaan Building Materials</title>
+  <meta name="description" content="Where to find the materials of traditional New England. Suppliers of stone, wood, metal, roofing, paint, and landscape materials, selected by Old Canaan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--paper:#F2EDE4;--paper-mid:#EAE4D9;--ink:#1A1814;--mid:#6B6458;--faint:#A89F94;--rule:#C8BFB0;--copper:#7A5C3C;--copper-lt:#B08A68;--font-display:'Playfair Display',Georgia,serif;--font-body:'EB Garamond',Georgia,serif;--max-w:1280px;--article-w:680px;--col-pad:clamp(1.5rem,5vw,5rem);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{font-size:18px;}body{background:var(--paper);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}a{color:inherit;text-decoration:none;}
+    .masthead{border-bottom:1px solid var(--rule);padding:2rem var(--col-pad);}.masthead-inner{max-width:var(--max-w);margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0.6rem;}.masthead-meta{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:flex;gap:0.6rem;}.masthead-lockup{text-align:center;width:100%;}.masthead-rule-top,.masthead-rule-bottom{height:1px;background:var(--ink);width:100%;max-width:520px;margin:0.5rem auto;}.masthead-title{font-family:var(--font-display);font-weight:500;letter-spacing:0.14em;text-transform:uppercase;line-height:1.25;color:var(--ink);}.masthead-title a{color:inherit;text-decoration:none;}.masthead-title-main{display:block;font-size:clamp(1.4rem,3vw,2.4rem);letter-spacing:0.35em;}.masthead-title-sub{display:block;font-size:clamp(0.9rem,2vw,1.55rem);letter-spacing:0.18em;color:var(--mid);}.masthead-sub{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--mid);margin-top:0.2rem;font-style:italic;}.masthead-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:0.2rem 2rem;margin-top:0.4rem;}.masthead-nav a{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);padding:0.2rem 0;border-bottom:1px solid transparent;transition:color 0.2s,border-color 0.2s;}.masthead-nav a:hover,.masthead-nav a.active{color:var(--ink);border-bottom-color:var(--copper);}
+    .page-header{max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;padding:4rem var(--col-pad) 3rem;}.page-rule{width:100%;height:1px;background:var(--ink);margin-bottom:2rem;}.page-label{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:1rem;}.page-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:500;line-height:1.15;letter-spacing:0.02em;color:var(--ink);margin-bottom:1rem;}.page-intro{font-family:var(--font-body);font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.8;color:var(--mid);font-style:italic;}
+    .suppliers-body{max-width:calc(var(--article-w) + (var(--col-pad) * 2));margin:0 auto;padding:0 var(--col-pad) 6rem;}
+    .supplier-category{margin-bottom:3.5rem;}.supplier-category-header{display:flex;align-items:center;gap:1.25rem;margin-bottom:2rem;}.supplier-category-rule{flex:1;height:1px;background:var(--rule);}.supplier-category-label{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper);white-space:nowrap;}
+    .supplier{padding:1.5rem 0;border-bottom:1px solid var(--rule);}.supplier:first-of-type{border-top:1px solid var(--rule);}.supplier-name{font-family:var(--font-display);font-size:1.1rem;font-weight:500;color:var(--ink);margin-bottom:0.25rem;}.supplier-location{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--faint);margin-bottom:0.6rem;}.supplier-desc{font-family:var(--font-body);font-size:1rem;line-height:1.75;color:var(--mid);margin-bottom:0.5rem;}.supplier-link{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--copper);border-bottom:1px solid var(--copper);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;}.supplier-link:hover{color:var(--ink);border-color:var(--ink);}
+    .footer{padding:2.5rem var(--col-pad);border-top:1px solid var(--rule);}.footer-inner{max-width:var(--max-w);margin:0 auto;}.footer-content{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}.footer-name{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);}.footer-location{font-family:var(--font-body);font-size:0.85rem;color:var(--faint);font-style:italic;}.footer-nav{margin-left:auto;display:flex;gap:2rem;}.footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}.footer-nav a:hover{color:var(--ink);}
+  </style>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://oldcanaan.com/suppliers/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Suppliers — Old Canaan Building Materials" />
+  <meta property="og:description" content="Where to find the materials of traditional New England." />
+  <meta property="og:url" content="https://oldcanaan.com/suppliers/" />
+  <meta property="og:site_name" content="Old Canaan Building Materials" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <img src="/images/monogram.png" alt="Old Canaan" style="width:28px;height:28px;object-fit:contain;opacity:0.8;display:block;margin:0 auto 0.5rem;" />
+      <div class="masthead-meta"><span>Connecticut</span><span style="color:var(--rule)">·</span><span>Est. in Practice</span></div>
+      <div class="masthead-lockup">
+        <div class="masthead-rule-top"></div>
+        <h1 class="masthead-title">
+          <a href="/"><span class="masthead-title-main">Old Canaan</span>
+          <span class="masthead-title-sub">Building Materials</span></a>
+        </h1>
+        <div class="masthead-rule-bottom"></div>
+        <p class="masthead-sub">The materials of traditional New England</p>
+      </div>
+      <nav class="masthead-nav">
+        <a href="/archive/">The Archive</a>
+        <a href="/standard/">The Standard</a>
+        <a href="/suppliers/" class="active">Suppliers</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="page-rule"></div>
+    <span class="page-label">Suppliers</span>
+    <h2 class="page-title">Where to find it.</h2>
+    <p class="page-intro">The suppliers listed here are sources Old Canaan has identified for the materials in the archive. This is not a directory. It is a short list of specific places that carry the right thing.</p>
+  </div>
+
+  <div class="suppliers-body">
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Stone &amp; Gravel</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Ring's End</div>
+        <div class="supplier-location">Connecticut — Multiple locations</div>
+        <p class="supplier-desc">The primary lumber and building materials dealer for traditional Connecticut work. Stocks bluestone, granite, and a range of masonry materials. First call for most material sourcing in Connecticut.</p>
+        <a href="https://www.ringsend.com" class="supplier-link" target="_blank" rel="noopener">ringsend.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Portland Brownstone Quarry</div>
+        <div class="supplier-location">Portland, Connecticut</div>
+        <p class="supplier-desc">The source for authentic Portland Brownstone from the Connecticut River Valley quarry. The only correct material for restoration of brownstone buildings in the region.</p>
+        <a href="https://www.portlandbrownstone.com" class="supplier-link" target="_blank" rel="noopener">portlandbrownstone.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Swenson Granite</div>
+        <div class="supplier-location">New Hampshire — Multiple locations</div>
+        <p class="supplier-desc">New England granite quarried and fabricated in New Hampshire. Steps, sills, curbing, and custom granite work. The standard source for New England granite specification.</p>
+        <a href="https://www.swensongranite.com" class="supplier-link" target="_blank" rel="noopener">swensongranite.com →</a>
+      </div>
+    </div>
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Wood Exteriors</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Carlisle Wide Plank Floors</div>
+        <div class="supplier-location">Stoddard, New Hampshire</div>
+        <p class="supplier-desc">Wide plank white pine and white oak flooring, milled in New Hampshire. The correct domestic source for wide plank flooring in traditional New England interiors.</p>
+        <a href="https://www.wideplankflooring.com" class="supplier-link" target="_blank" rel="noopener">wideplankflooring.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Architectural Components Group</div>
+        <div class="supplier-location">Montague, Massachusetts</div>
+        <p class="supplier-desc">Reproduction wood window sash in period profiles for Federal, Greek Revival, and Colonial Revival buildings. The correct source for replacing historic sash without losing period character.</p>
+        <a href="https://www.architecturalcomponents.com" class="supplier-link" target="_blank" rel="noopener">architecturalcomponents.com →</a>
+      </div>
+    </div>
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Metal Details</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">E.G. Washburne &amp; Co.</div>
+        <div class="supplier-location">Danvers, Massachusetts</div>
+        <p class="supplier-desc">Hand-hammered copper weathervanes manufactured in Massachusetts since 1853. The standard New England source for traditional copper weathervane forms.</p>
+        <a href="https://www.washburne.com" class="supplier-link" target="_blank" rel="noopener">washburne.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Robinson Iron</div>
+        <div class="supplier-location">Alexander City, Alabama</div>
+        <p class="supplier-desc">Reproduction architectural cast iron — railings, fence panels, roof cresting, cellar windows. The primary domestic source for historic cast iron reproduction work.</p>
+        <a href="https://www.robinsoniron.com" class="supplier-link" target="_blank" rel="noopener">robinsoniron.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Rocky Mountain Hardware</div>
+        <div class="supplier-location">Hailey, Idaho</div>
+        <p class="supplier-desc">Solid silicon bronze door hardware cast in the United States. The correct hardware for traditional New England residential entries.</p>
+        <a href="https://www.rockymountainhardware.com" class="supplier-link" target="_blank" rel="noopener">rockymountainhardware.com →</a>
+      </div>
+    </div>
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Roofing</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Vermont Structural Slate</div>
+        <div class="supplier-location">Fair Haven, Vermont</div>
+        <p class="supplier-desc">Vermont slate quarried and supplied from Fair Haven. Unfading and weathering grades. The primary domestic source for Vermont slate roofing on traditional New England buildings.</p>
+        <a href="https://www.vermontstructuralslate.com" class="supplier-link" target="_blank" rel="noopener">vermontstructuralslate.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Camara Slate</div>
+        <div class="supplier-location">Middle Granville, New York</div>
+        <p class="supplier-desc">New York and Vermont slate for roofing and flooring. A secondary source for slate when a specific grade or color is unavailable elsewhere.</p>
+        <a href="https://www.camaraslate.com" class="supplier-link" target="_blank" rel="noopener">camaraslate.com →</a>
+      </div>
+    </div>
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Paints &amp; Finishes</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Fine Paints of Europe</div>
+        <div class="supplier-location">Woodstock, Vermont</div>
+        <p class="supplier-desc">High-quality oil-based exterior and interior paints distributed through specialty dealers. The correct paint for traditional New England exterior wood work where quality matters.</p>
+        <a href="https://www.finepaintsofeurope.com" class="supplier-link" target="_blank" rel="noopener">finepaintsofeurope.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Allback Linseed Oil Paint</div>
+        <div class="supplier-location">Distributed in the United States</div>
+        <p class="supplier-desc">Pure linseed oil paint in traditional colors including iron oxide barn red. The correct material for traditional barn and exterior wood painting where the paint and the color are inseparable.</p>
+        <a href="https://www.allbackpaint.com" class="supplier-link" target="_blank" rel="noopener">allbackpaint.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Keim Mineral Paints</div>
+        <div class="supplier-location">Distributed in the United States</div>
+        <p class="supplier-desc">Mineral silicate exterior masonry paint — the only exterior masonry paint with the vapor permeability and durability appropriate for historic brick and stone. Lasts 20 to 30 years.</p>
+        <a href="https://www.keimpaints.com" class="supplier-link" target="_blank" rel="noopener">keimpaints.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Cathedral Stone Products</div>
+        <div class="supplier-location">Hanover, Maryland</div>
+        <p class="supplier-desc">Jahn restoration mortars and consolidants for historic masonry repair. The source for brownstone repair compounds, natural hydraulic lime mortars, and preservation-grade masonry products.</p>
+        <a href="https://www.cathedralstone.com" class="supplier-link" target="_blank" rel="noopener">cathedralstone.com →</a>
+      </div>
+    </div>
+
+    <div class="supplier-category">
+      <div class="supplier-category-header">
+        <span class="supplier-category-label">Landscape</span>
+        <div class="supplier-category-rule"></div>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Native Plant Trust</div>
+        <div class="supplier-location">Framingham, Massachusetts</div>
+        <p class="supplier-desc">New England native plants in Connecticut and New England ecotypes — ferns, meadow grasses, wildflowers, and woody plants. The authoritative native plant source for the region.</p>
+        <a href="https://www.nativeplanttrust.org" class="supplier-link" target="_blank" rel="noopener">nativeplanttrust.org →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Broken Arrow Nursery</div>
+        <div class="supplier-location">Hamden, Connecticut</div>
+        <p class="supplier-desc">Connecticut nursery specializing in unusual and hard-to-find woody plants, including English yew, European hornbeam, and native species for traditional New England landscape work.</p>
+        <a href="https://www.brokenarrownursery.com" class="supplier-link" target="_blank" rel="noopener">brokenarrownursery.com →</a>
+      </div>
+      <div class="supplier">
+        <div class="supplier-name">Cummins Nursery</div>
+        <div class="supplier-location">Ithaca, New York</div>
+        <p class="supplier-desc">Disease-resistant apple and pear varieties on dwarfing rootstocks for espalier and kitchen garden work. The correct source for fruit trees suited to New England conditions.</p>
+        <a href="https://www.cumminsnursery.com" class="supplier-link" target="_blank" rel="noopener">cumminsnursery.com →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <span class="footer-name">Old Canaan Building Materials</span>
+        <span class="footer-location">Connecticut</span>
+        <nav class="footer-nav">
+          <a href="/about/">About</a>
+          <a href="mailto:chris@girardhouse.com">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
