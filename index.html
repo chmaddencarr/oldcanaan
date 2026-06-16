@@ -71,12 +71,21 @@
     }
     .masthead-title {
       font-family: var(--font-display);
-      font-size: clamp(1.5rem, 3.5vw, 2.6rem);
       font-weight: 500;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      line-height: 1.2;
+      line-height: 1.25;
       color: var(--ink);
+    }
+    .masthead-title-main {
+      display: block;
+      font-size: clamp(1.5rem, 3.5vw, 2.6rem);
+    }
+    .masthead-title-sub {
+      display: block;
+      font-size: clamp(1rem, 2.2vw, 1.65rem);
+      letter-spacing: 0.18em;
+      color: var(--mid);
     }
     .masthead-sub {
       font-family: var(--font-display);
@@ -570,7 +579,10 @@
       </div>
       <div class="masthead-lockup">
         <div class="masthead-rule-top"></div>
-        <h1 class="masthead-title">Old Canaan Building Materials</h1>
+        <h1 class="masthead-title">
+          <span class="masthead-title-main">Old Canaan</span>
+          <span class="masthead-title-sub">Building Materials</span>
+        </h1>
         <div class="masthead-rule-bottom"></div>
         <p class="masthead-sub">The materials of traditional New England</p>
       </div>
