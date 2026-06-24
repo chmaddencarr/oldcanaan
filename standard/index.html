@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Standard — Old Canaan Building Materials</title>
-  <meta name="description" content="The Old Canaan Standard is the specific identification of a material — the grade, source, specification, and context that makes it the right choice for traditional New England work." />
+  <meta name="description" content="A specification is not a suggestion. The Old Canaan Standard names the exact grade, thickness, and source for every material in the archive — the way an architect specifies it, not the way a blog describes it." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -27,6 +27,14 @@
     .example-spec{font-family:var(--font-body);font-size:0.95rem;color:var(--mid);font-style:italic;line-height:1.7;}
     .example-link{display:inline-block;margin-top:0.75rem;font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--copper);border-bottom:1px solid var(--copper);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;}
     .example-link:hover{color:var(--ink);border-color:var(--ink);}
+    .standard-jumpnav{display:flex;flex-wrap:wrap;gap:0.5rem 1.5rem;margin:2.5rem 0;padding:1.5rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+    .standard-jumpnav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}
+    .standard-jumpnav a:hover{color:var(--copper);}
+    .standard-category-heading{margin-top:4rem;margin-bottom:0.5rem;padding-top:1rem;}
+    .standard-category-heading:first-of-type{margin-top:2rem;}
+    .standard-category-heading h3{font-family:var(--font-display);font-size:1.4rem;font-weight:500;color:var(--ink);letter-spacing:0.01em;}
+    .standard-category-count{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--faint);margin-top:0.4rem;display:block;}
+    .standard-category-archive-link{font-family:var(--font-display);font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--copper);border-bottom:1px solid var(--copper);padding-bottom:1px;}
     .footer{padding:2.5rem var(--col-pad);border-top:1px solid var(--rule);}.footer-inner{max-width:var(--max-w);margin:0 auto;}.footer-content{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;}.footer-name{font-family:var(--font-display);font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);}.footer-location{font-family:var(--font-body);font-size:0.85rem;color:var(--faint);font-style:italic;}.footer-nav{margin-left:auto;display:flex;gap:2rem;}.footer-nav a{font-family:var(--font-display);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);transition:color 0.2s;}.footer-nav a:hover{color:var(--ink);}
   </style>
   <!-- SEO -->
@@ -36,21 +44,21 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="The Standard — Old Canaan Building Materials" />
-  <meta property="og:description" content="The Old Canaan Standard: precise material identification — grade, source, specification, and context for traditional New England work." />
+  <meta property="og:description" content="A specification is not a suggestion. The Old Canaan Standard names the exact grade, thickness, and source for every material in the archive — the way an architect specifies it, not the way a blog describes it." />
   <meta property="og:url" content="https://oldcanaan.com/standard/" />
   <meta property="og:image" content="https://oldcanaan.com/images/hero.jpg" />
   <meta property="og:site_name" content="Old Canaan Building Materials" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Standard — Old Canaan Building Materials" />
-  <meta name="twitter:description" content="The Old Canaan Standard: precise material identification — grade, source, specification, and context for traditional New England work." />
+  <meta name="twitter:description" content="A specification is not a suggestion. The Old Canaan Standard names the exact grade, thickness, and source for every material in the archive — the way an architect specifies it, not the way a blog describes it." />
   <meta name="twitter:image" content="https://oldcanaan.com/images/hero.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "The Standard — Old Canaan Building Materials",
-    "description": "The Old Canaan Standard: precise material identification — grade, source, specification, and context for traditional New England work.",
+    "description": "A specification is not a suggestion. The Old Canaan Standard names the exact grade, thickness, and source for every material in the archive — the way an architect specifies it, not the way a blog describes it.",
     "url": "https://oldcanaan.com/standard/",
     "publisher": {
       "@type": "Organization",
@@ -89,48 +97,177 @@
   <div class="page-header">
     <div class="page-rule"></div>
     <span class="page-label">The Old Canaan Standard</span>
-    <h2 class="page-title">Every material, precisely identified.</h2>
+    <h2 class="page-title">A specification, not a suggestion.</h2>
   </div>
 
   <div class="page-body">
-    <p class="opening">The Old Canaan Standard is the specific identification of a material — the grade, source, specification, and context that makes it the right choice for traditional New England work.</p>
+    <p class="opening">Most things written about building materials are vague on purpose. "Natural stone." "Quality copper." "Traditional finish." The vagueness is not an accident — it is what lets an article apply to everything and commit to nothing. The Standard is the opposite. It is a refusal to leave the room until the material has a name, a grade, a thickness, and a reason.</p>
 
-    <p>The knowledge that separates a well-built traditional property from one that merely approximates the aesthetic has always existed. It lives in the heads of old builders, in the sample rooms of good suppliers, in the specifications of architects who have been doing this work for decades. Old Canaan makes it findable.</p>
+    <p>A specification is not a suggestion. "Sixteen-ounce copper" is a different material from "twenty-ounce copper," and a roof built from the wrong one fails in a way that a roof built from the right one does not, twenty years from now, when no one remembers which article they read. The Standard exists because that distinction is usually the first thing cut from anything written for a general audience — and it is the only part that matters when you are actually building something.</p>
 
-    <p>Each entry in the archive ends with The Standard — a precise, plain-language specification you can bring to a supplier. Not a brand recommendation. Not a product endorsement. The identification of the thing itself.</p>
+    <p>Every entry in the archive ends with a Standard: a short, declarative paragraph naming exactly what to ask for. Not a brand. Not an affiliate link. The material itself, specified the way an architect would specify it on a real set of drawings, because that is exactly what it is.</p>
 
     <div class="section-break"></div>
 
-    <p>Over time, the Standard becomes a shorthand. A homeowner walks into a supplier and asks for the Old Canaan Standard for pea gravel. The supplier knows what that means. This is how trust accumulates — entry by entry, material by material.</p>
+    <p>The Standards below are a sample — one or two from each category in the archive. Each links to the full entry, where the reasoning behind the specification is laid out in full: what the material is, how it behaves over decades, and why the alternatives fall short.</p>
+
+    <div class="standard-jumpnav">
+      <a href="#sg">Stone &amp; Gravel</a>
+      <a href="#we">Wood Exteriors</a>
+      <a href="#md">Metal Details</a>
+      <a href="#pf">Paints &amp; Finishes</a>
+      <a href="#ls">Landscape</a>
+      <a href="#rf">Roofing</a>
+      <a href="#in">Interior</a>
+    </div>
 
     <div class="standard-examples">
 
+      <div class="standard-category-heading" id="sg">
+        <h3>Stone &amp; Gravel</h3>
+        <span class="standard-category-count">19 entries in the archive · <a href="/archive/#stone-gravel" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
       <div class="standard-example-item">
-        <span class="example-cat">Stone &amp; Gravel — 001</span>
+        <span class="example-cat">Entry 001</span>
         <h3 class="example-title">Native River-Washed Pea Gravel</h3>
         <p class="example-spec">River-washed pea gravel, 3/8" grade. Native New England origin. Color range: warm grey, buff, pale rose. Installed over compacted crusher run base at 2 to 3 inches depth. Edged in Belgian block or granite cobble.</p>
         <a href="/stone-gravel/pea-gravel.html" class="example-link">Read the full entry →</a>
       </div>
 
       <div class="standard-example-item">
-        <span class="example-cat">Stone &amp; Gravel — 002</span>
-        <h3 class="example-title">Bluestone</h3>
-        <p class="example-spec">Natural cleft bluestone, full range or select blue, for traditional terraces and historic applications. Thermal bluestone for formal, precise applications. Specify the finish, specify the color range, and look at it wet before committing.</p>
-        <a href="/stone-gravel/bluestone.html" class="example-link">Read the full entry →</a>
+        <span class="example-cat">Entry 017</span>
+        <h3 class="example-title">Granite Steps</h3>
+        <p class="example-spec">New England granite, sawn top surface, minimum 5-inch thickness, 6-inch rise, 16-inch tread, for entry steps on traditional residential properties. Bullnose nosing. Set on poured concrete footing below frost depth or minimum 12-inch compacted crushed stone base. No precast concrete. No imported granite. The weight and the color and the permanence are the point.</p>
+        <a href="/stone-gravel/granite-steps.html" class="example-link">Read the full entry →</a>
       </div>
 
       <div class="standard-example-item">
-        <span class="example-cat">Stone &amp; Gravel — 003</span>
-        <h3 class="example-title">Fieldstone</h3>
-        <p class="example-spec">Reclaimed New England fieldstone for walls, foundations, and landscape applications. Dry-laid construction for freestanding walls at grade. Mortared construction for foundations and chimneys with grey or tan mortar. No manufactured stone veneer.</p>
-        <a href="/stone-gravel/fieldstone.html" class="example-link">Read the full entry →</a>
+        <span class="example-cat">Entry 013</span>
+        <h3 class="example-title">Dry-Stack Stone Wall</h3>
+        <p class="example-spec">Double-wythe dry-stack construction, local fieldstone, minimum 24-inch base width for a 36-inch wall. Through-stones at maximum 4-foot spacing horizontally, every other course vertically. One-inch batter per foot of height on each face. Flat capstone course, minimum 6-inch thickness. No mortar. This is the correct wall for New England.</p>
+        <a href="/stone-gravel/dry-stack-stone-wall.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="we">
+        <h3>Wood Exteriors</h3>
+        <span class="standard-category-count">15 entries in the archive · <a href="/archive/#wood-exteriors" class="standard-category-archive-link">browse all →</a></span>
       </div>
 
       <div class="standard-example-item">
-        <span class="example-cat">Wood Exteriors — 001</span>
+        <span class="example-cat">Entry 001</span>
         <h3 class="example-title">Eastern White Cedar Shingles</h3>
         <p class="example-spec">Eastern white cedar shingles, Extra grade, 16-inch, re-butted and re-jointed. Unfinished for coastal installations. Bleaching oil at installation for inland projects where true silver-grey is the goal. 5-inch maximum exposure.</p>
         <a href="/wood-exteriors/eastern-white-cedar.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 016</span>
+        <h3 class="example-title">Wood Window Sash</h3>
+        <p class="example-spec">Original old-growth pine or fir double-hung sash, reglazed with linseed oil putty on a 15 to 20 year cycle, weather-stripped, and fitted with low-e interior storm windows where energy performance is the concern. Replacement with vinyl or aluminum is not the correct answer for a traditional New England building. Maintain what is there.</p>
+        <a href="/wood-exteriors/wood-window-sash.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 008</span>
+        <h3 class="example-title">Black Locust</h3>
+        <p class="example-spec">Black locust for fence posts, split-rail fencing, and exterior framing in or near ground contact on New England properties where rot resistance without chemical treatment is the specification. No sealant or treatment required. Pre-drill for all fasteners. Source from regional mills or specialty dealers. This is the correct post material for a traditional New England fence.</p>
+        <a href="/wood-exteriors/black-locust.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="md">
+        <h3>Metal Details</h3>
+        <span class="standard-category-count">17 entries in the archive · <a href="/archive/#metal-details" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 001</span>
+        <h3 class="example-title">Copper — Flashing, Gutters, and Downspouts</h3>
+        <p class="example-spec">Sixteen-ounce copper for flashing, gutters, and downspouts on traditional New England residential work. Twenty-ounce for flat roof and high-wear applications. Lead-coated copper where staining is a concern. Half-round gutter profile. Fabricated and installed by a sheet metal contractor experienced in architectural copper. The patina it develops is not weathering. It is the material becoming permanent.</p>
+        <a href="/metal-details/copper.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 009</span>
+        <h3 class="example-title">Copper Roofing</h3>
+        <p class="example-spec">Sixteen-ounce cold-rolled copper, standing seam with concealed floating cleats at 16-inch panel width, for sloped copper roofing on traditional New England residential buildings. Twenty-ounce for flat and low-slope applications with soldered seams. Solid wood board substrate only. Work by a sheet metal contractor with documented copper roofing experience. The service life of correctly installed copper roofing is measured in generations.</p>
+        <a href="/metal-details/copper-roofing.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="pf">
+        <h3>Paints &amp; Finishes</h3>
+        <span class="standard-category-count">19 entries in the archive · <a href="/archive/#paints-finishes" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 012</span>
+        <h3 class="example-title">Barn Red — What the Color Actually Was</h3>
+        <p class="example-spec">Iron oxide pigment in raw linseed oil, thinned with turpentine for the first coat, for barn and agricultural outbuilding paint on traditional New England properties. The color should read as deep brownish red — not bright red. If the paint looks like a fire engine, it is the wrong color.</p>
+        <a href="/paints-finishes/barn-red.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 010</span>
+        <h3 class="example-title">Pointing Mortar — Selecting the Right Type</h3>
+        <p class="example-spec">Match mortar compressive strength to the masonry being repointed — softer than or equal to the masonry unit, never harder. For pre-1900 soft brick: natural hydraulic lime mortar or lime putty mortar. For post-1900 brick: Type N Portland-lime mortar at most. For granite and harder stone: Type N or Type S, depending on exposure. Sand color and texture must match the original. This is the specification that protects the masonry rather than the mortar.</p>
+        <a href="/paints-finishes/pointing-mortar-types.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="ls">
+        <h3>Landscape</h3>
+        <span class="standard-category-count">17 entries in the archive · <a href="/archive/#landscape" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 010</span>
+        <h3 class="example-title">The Mowing Edge</h3>
+        <p class="example-spec">Clean vertical cut through turf at bed margin, re-established minimum three times per year, as the primary organizational line of the maintained New England landscape. Steel edging at the margin of gravel paths and formal beds. No plastic edging. No ragged turf edge. This is the line that makes the rest of the landscape read.</p>
+        <a href="/landscape/the-mowing-edge.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 008</span>
+        <h3 class="example-title">Granite Post and Chain</h3>
+        <p class="example-spec">Salvage or new New England granite, 5-inch minimum square cross-section, 24 inches above grade, sawn top surface, for driveway entry posts at traditional New England residential properties. Three-eighths-inch iron chain connecting posts at 6 to 8 inch drape. Set posts in concrete below frost depth. This is the detail that marks the entry without closing it.</p>
+        <a href="/landscape/granite-post-and-chain.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="rf">
+        <h3>Roofing</h3>
+        <span class="standard-category-count">11 entries in the archive · <a href="/archive/#roofing" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 001</span>
+        <h3 class="example-title">Slate Roofing</h3>
+        <p class="example-spec">Vermont #1 Unfading slate, 3/16" to 1/4" thickness, copper nails, copper flashings, for roofing on traditional New England residential buildings. No imported slate. No asphalt underlayment in contact with the slate — specify 30-lb felt or copper-compatible synthetic. A slate roof correctly installed is a once-per-building-lifetime specification.</p>
+        <a href="/roofing/slate-roofing.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 003</span>
+        <h3 class="example-title">Cedar Shingle Roofing</h3>
+        <p class="example-spec">Number 1 Blue Label western red cedar shingles, 18-inch length, 5-1/2-inch exposure on slopes 4:12 and steeper, over 1x4 skip sheathing at appropriate spacing, for roofing on traditional New England residential buildings. Stainless steel nails. Copper step and counter flashings. No solid sheathing under cedar roofing without a ventilated batten system above it.</p>
+        <a href="/roofing/cedar-shingle-roofing.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-category-heading" id="in">
+        <h3>Interior</h3>
+        <span class="standard-category-count">6 entries in the archive · <a href="/archive/#interior" class="standard-category-archive-link">browse all →</a></span>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 001</span>
+        <h3 class="example-title">Wide Plank Pine Flooring</h3>
+        <p class="example-spec">Eastern white pine, minimum 10-inch width, random lengths, knotty or clear grade appropriate to the room, face-nailed, for wide plank flooring in traditional New England interiors. Old-growth salvage material preferred where available. Finish with tung oil, shellac, or period-appropriate oil-based floor finish. No polyurethane on historic wide plank pine.</p>
+        <a href="/interior/wide-plank-pine-flooring.html" class="example-link">Read the full entry →</a>
+      </div>
+
+      <div class="standard-example-item">
+        <span class="example-cat">Entry 002</span>
+        <h3 class="example-title">Plaster Walls — Three-Coat System</h3>
+        <p class="example-spec">Three-coat lime plaster — scratch, brown, and finish coats — over wood lath for interior walls in traditional New England buildings under restoration or new traditional construction where the budget supports it. Lime putty from domestic manufacturers. Finish coat: lime putty and marble dust for smooth finish. This is the wall the house was designed to have.</p>
+        <a href="/interior/plaster-walls.html" class="example-link">Read the full entry →</a>
       </div>
 
     </div>
@@ -143,7 +280,7 @@
         <span class="footer-location">Connecticut</span>
         <nav class="footer-nav">
           <a href="/about/">About</a>
-          <a href="mailto:hello@oldcanaan.com">Contact</a>
+          <a href="mailto:chris@girardhouse.com">Contact</a>
         </nav>
       </div>
     </div>
